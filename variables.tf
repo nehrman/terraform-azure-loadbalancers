@@ -1,39 +1,46 @@
-variable az_name {
+variable "az_name" {
   description = "Name"
 }
 
-variable az_env {
+variable "az_env" {
   description = "Define the environment where resources will be created"
 }
 
-variable az_location {
+variable "az_location" {
   description = "Define the Azure Region to deploy the resources"
-  default = "francecentral"
+  default     = "francecentral"
 }
 
-variable az_ft_name {}
+variable "az_ft_name" {
+}
 
-variable az_lb_probes_protocol {
+variable "az_lb_probes_protocol" {
   default = "Http"
 }
 
-variable az_lb_probes_path {
+variable "az_lb_probes_path" {
   default = "/"
 }
 
-variable az_lb_probes_port {}
+variable "az_lb_probes_port" {
+}
 
-variable az_lb_nb_probes {}
+variable "az_lb_nb_probes" {
+}
 
-variable az_lb_rule_proto {}
+variable "az_lb_rule_proto" {
+}
 
-variable az_lb_rule_ft_port {}
+variable "az_lb_rule_ft_port" {
+}
 
-variable az_lb_rule_bck_port {}
+variable "az_lb_rule_bck_port" {
+}
 
-variable az_tags {
-  type = "map"
+variable "az_tags" {
+  type = map(string)
   default = {
-    "test"= "test"
+    "test" = "test"
   }
 }
+
