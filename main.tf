@@ -1,7 +1,7 @@
 # For Demo Purpose
 
 module "lb" {
-  source                   = "app.terraform.io/Hashicorp-neh-Demo/lb/azurerm"
+  source                   = "app.terraform.io/Nehrman-Demo/lb/azurerm"
   version                  = "2.0.0"
   tf_az_name               = var.az_name
   tf_az_env                = var.az_env
