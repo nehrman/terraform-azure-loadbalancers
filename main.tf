@@ -2,7 +2,7 @@
 
 module "lb" {
   source                   = "app.terraform.io/Nehrman-Demo/lb/azurerm"
-  version                  = "3.0.0"
+  version                  = "3.0.1"
   tf_az_name               = var.az_name
   tf_az_env                = var.az_env
   tf_az_location           = var.az_location
